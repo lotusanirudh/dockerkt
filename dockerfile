@@ -1,6 +1,7 @@
 FROM centos:latest
 MAINTAINER lotus.anirudh@gmail.com
 RUN yum update -y
+RUN yum install tree -y
 RUN yum install -y httpd \
  zip \
  unzip
