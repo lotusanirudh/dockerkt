@@ -8,7 +8,7 @@ WORKDIR /var/www/html
 RUN unzip speed.zip
 RUN cp -rvf markups-speed/* .
 RUN rm -rf _MACOSX markups-speed speed.zip
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
 
